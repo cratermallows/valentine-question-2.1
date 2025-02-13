@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Question</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+        img {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will you be my Valentine?</h1>
+    <button onclick="showCheerfulCat()">Yes</button>
+    <button onclick="showSadCat()">No</button>
+
+    <div id="response">
+        <img id="catImage" src="" alt="" style="display:none;">
+    </div>
+
+    <script>
+        function showCheerfulCat() {
+            document.getElementById("catImage").src = "cheerful_cat.png";
+            document.getElementById("catImage").style.display = "block";
+        }
+
+        function showSadCat() {
+            document.getElementById("catImage").src = "sad_cat.png";
+            document.getElementById("catImage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
